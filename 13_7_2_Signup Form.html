@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .userform {
+            width: 40%;
+            margin: auto;
+            padding: 15px;
+            box-shadow: 0px 0px 8px rgb(185, 183, 183);
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+        form{
+            margin: 20px 0px;
+        }
+
+        input {
+            width: 100%;
+            margin: 8px 0px;
+            padding: 8px;
+            border-radius: 3px;
+            border: 1px solid gray;
+            outline: none;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 300;
+            border-bottom: 1px solid;
+            padding: 5px;
+            font-size: 25px;
+        }
+
+        #btn {
+            background-color: rgb(70, 70, 231);
+            color: rgb(81, 105, 190);
+            border: none;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        #btn:hover {
+            background-color: blue;
+            cursor: pointer;
+        }
+
+        label {
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="userform">
+        <h1>Signup Form</h1>
+        <div class="username">
+            <label for="">Username</label>
+            <input type="text" placeholder="enter your name">
+        </div>
+
+        <div class="email">
+            <label for="">Email</label>
+            <input type="email" placeholder="enter your email">
+        </div>
+
+        <div class="phone-no">
+            <label for="">Mobile no</label>
+            <input type="number" placeholder="enter your phone number">
+        </div>
+
+        <div class="password">
+            <label for="">Password</label>
+            <input type="password" placeholder="enter your password">
+        </div>
+        <div class="button">
+            <input type="button" value="submit">
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
