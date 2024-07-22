@@ -1,7 +1,12 @@
 const fetchdata = async () => {
-    const res = await fetch("https://jsonplaceholder.typicode.com/users");
-    const data =await res.json();
-    console.log(data);
+    try{
+        const res = await fetch("https://jsonplaceholder.typicode.com/users");
+        const data =await res.json();
+        console.log(data);
+    } catch{
+        (console.log(`error is :${error}`));
+    }
+    
 }
 fetchdata();
 console.log("a");
