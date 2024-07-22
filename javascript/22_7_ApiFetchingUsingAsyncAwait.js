@@ -10,6 +10,6 @@ const fetchdata = async () => {
 }
 fetchdata();
 console.log("a");
-console.log("b");
+console.log("b");u
 console.log("c");
 console.log("d");
