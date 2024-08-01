@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            position: relative;
+        }
+
+        .box1,
+        .box2 {
+            position: absolute;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+        }
+
+        .box1 {
+            animation-name: moveBox1;
+        }
+
+        .box2 {
+            animation-name: moveBox2;
+        }
+
+        @keyframes moveBox1 {
+            from {
+                width: 0px;
+                height: 0px;
+                background-color: aqua;
+                left: 0px;
+                top: 0px;
+            }
+
+            to {
+                width: 400px;
+                height: 400px;
+                background-color: black;
+                left: 40%;
+                top: 400px;
+            }
+        }
+
+        @keyframes moveBox2 {
+            from {
+                width: 0px;
+                height: 0px;
+                background-color: red;
+                right: 0px;
+                top: 0px;
+            }
+
+            to {
+                width: 400px;
+                height: 400px;
+                background-color: black;
+                left: 40%;
+                top: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>

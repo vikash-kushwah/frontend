@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design Showcase</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+        }
+
+        .sidebar {
+            background-color: #F44237;
+            color: white;
+            width: 300px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+
+        }
+
+        .sidebar h1 {
+            margin: 64px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .sidebar nav {
+            width: 100%;
+        }
+
+        a {
+            display: block;
+            width: 100%;
+            padding: 8px 16px;
+            margin: 10px 0;
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: white;
+            color: #F44237;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 40px;
+            background-color: #f4f4f4;
+            overflow-y: auto;
+        }
+
+        .main-content h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .main-content h1 span {
+            color: #F44237;
+        }
+
+        .showcase {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .showcase img {
+            width: calc(50% - 10px);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .main-content p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            line-height: 30px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1>Company Name</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Showcase</a>
+            <a href="#">Services</a>
+            <a href="#">Designers</a>
+            <a href="#">Packages</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+    <div class="main-content">
+        <h1>Interior Design <br> <span>Showcase.</span></h1>
+        <div class="showcase">
+            <img src="https://www.w3schools.com/w3images/kitchenconcrete.jpg" alt="Interior Design 1">
+            <img src="https://www.w3schools.com/w3images/livingroom2.jpg" alt="Interior Design 2">
+            <img src="https://www.w3schools.com/w3images/diningroom.jpg" alt="Interior Design 3">
+            <img src="https://www.w3schools.com/w3images/atrium.jpg" alt="Interior Design 4">
+            <img src="https://www.w3schools.com/w3images/bedroom.jpg" alt="Interior Design 5">
+            <img src="https://www.w3schools.com/w3images/livingroom2.jpg" alt="Interior Design 6">
+        </div>
+        <h1><span>Services.</span></h1>
+        <p>We are a interior design service that focus on what's best for your home and what's best for you!
+        </p>
+        <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h1><span>Designers</span></h1>
+        <p>The best team in the world.</p>
+        <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    </div>
+</body>
+
+</html>
