@@ -5,7 +5,6 @@ const dotenv = require("dotenv").config();
 const rootroute=require("./routes/rootroute");
 const userroute=require("./routes/userroute");
 const productroute=require("./routes/productroute");
-const userdataroute=require("./routes/userdataroute");
 const connectDB = require("./config/db");
 
 const PORT = process.env.PORT || 8000 || 6000;
@@ -34,8 +33,6 @@ app.use("/sales",userroute);
 
 
 app.use("/products",productroute);
-
-app.use("/userdata",userdataroute);
 
 //server create
 app.listen(PORT, () => {
