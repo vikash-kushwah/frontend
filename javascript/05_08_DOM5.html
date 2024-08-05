@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM5</title>
+</head>
+
+<body>
+    <!-- <input type="text" id="name" placeholder="enter your name">
+    <input type="text" id="email" placeholder="enter your email">
+    <input type="text" id="mob" placeholder="enter your mobile number">
+    <input type="text" id="pass" placeholder="enter your password">
+    <button id="submit">submit</button>
+    <script>
+        document.getElementById("submit").onclick=function(){
+            let name=document.getElementById("name").value;
+            let email=document.getElementById("email").value;
+            let mob=document.getElementById("mob").value;
+            let pass=document.getElementById("pass").value;
+            console.log(name,email,mob,pass);
+        }
+
+    </script> -->
+
+
+
+    <!-- <input type="text" class="inp" placeholder="enter your name">
+    <input type="text" class="inp" placeholder="enter your email">
+    <input type="text" class="inp" placeholder="enter your mobile number">
+    <input type="text" class="inp" placeholder="enter your password">
+    <button id="submit">submit</button>
+    <script>
+        document.getElementById("submit").onclick=function(){
+            let data=document.getElementsByClassName("inp");
+            for(let i of data){
+                console.log(i.value);
+            }
+        }
+    </script> -->
+
+
+
+    <input type="text" class="inp" placeholder="enter your name">
+    <input type="text" class="inp" placeholder="enter your email">
+    <input type="text" class="inp" placeholder="enter your mobile number">
+    <input type="text" class="inp" placeholder="enter your password">
+    <button id="submit">submit</button>
+    <script>
+        document.querySelector("button").onclick = function () {
+            let data = document.querySelectorAll("input");
+            data.forEach((i) => {
+                console.log(i.value);
+            }
+            )
+        }
+    </script>
+</body>
+
+</html>

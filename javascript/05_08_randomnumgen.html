@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random number generator</title>
+</head>
+
+<body>
+
+    <!-- <input type="text" id="inp">
+    <button id="btn">Generate</button>
+    <script>
+        document.getElementById("btn").onclick = function () {
+        //     // let random=Math.random()*255;
+
+        //     // let random=Math.floor(Math.random()*255);
+        //     // console.log(random)
+        //     // document.getElementById("inp").value=random;
+            let random=`${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}`;
+            document.getElementById("inp").value = random;
+            let rgb= `rgb(${random})`;
+            document.body.style.backgroundColor=rgb;
+        }
+    </script> -->
+
+
+
+    <input type="text" id="inp">
+    <script>
+        document.onkeypress=function(){
+            if(event.key=="Enter"){
+                let random=`${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}`;
+            document.getElementById("inp").value = random;
+            let rgb= `rgb(${random})`;
+            document.body.style.backgroundColor=rgb;
+            }
+        }
+    </script>
+
+    <!-- <input type="text" id="inp">
+    <script>
+        setInterval(() => {
+            let random = `${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}`;
+            document.getElementById("inp").value = random;
+            let rgb = `rgb(${random})`;
+            document.body.style.backgroundColor = rgb;
+        }, 800)
+    </script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM1</title>
+</head>
+
+<body id="bo">
+    <button id="btn">click</button>
+    <button id="black">black</button>
+    <button id="green">green</button>
+    <button id="date">Date</button>
+    <h1 id="h"></h1>
+    <script>
+        document.getElementById("btn").onclick = function () {
+            console.log("hello");
+        }//when we click on button this will console log hello 
+
+        document.getElementById("black").onclick = function () {
+            document.getElementById("bo").style.backgroundColor="black";
+            console.log("you clicked black button");
+        }
+        document.getElementById("green").onclick = function () {
+            document.getElementById("bo").style.backgroundColor="green";
+        }
+
+        // document.getElementById("date").onclick=function(){
+        document.getElementById("date").onmouseover=function(){
+            let date=new Date();
+            document.getElementById("h").innerHTML=date;
+            console.log(date);
+        }
+    </script>
+</body>
+
+    
+
+    
+</body>
+
+</html>
