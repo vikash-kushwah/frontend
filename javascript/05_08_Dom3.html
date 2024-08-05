@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM3</title>
+</head>
+
+<body id="bo">
+    <input type="text" id="inp1" placeholder="input first number">
+    <input type="text" id="inp2" placeholder="input second number">
+    <select name="" id="submit">
+        <option value="">None</option>
+        <option value="+">Addition</option>
+        <option value="-">Subtract</option>
+        <option value="*">Multiplu</option>
+        <option value="/">Divide</option>
+        <option value="%">Remainder</option>
+        
+    </select>
+    <h1 id="h"></h1>
+
+
+    <script>
+        document.getElementById("submit").onclick = function () {
+            let num1 = Number(document.getElementById("inp1").value);
+            let num2 = Number(document.getElementById("inp2").value);
+            let op = document.getElementById("submit").value;
+            let result;
+
+            if(op=="+"){
+                result=(num1+num2);
+            }
+            else if(op=="-"){
+               result=(num1-num2);
+            }
+            else if(op=="*"){
+                result=(num1*num2);
+            }
+            else if(op=="/"){
+                result=(num1/num2);
+            }
+            else if(op=="%"){
+                result=(num1%num2);
+            }
+            document.getElementById("h").innerHTML = result;
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
